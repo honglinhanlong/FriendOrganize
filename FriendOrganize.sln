@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendOrganize.UI", "FriendOrganize.UI\FriendOrganize.UI.csproj", "{FE536887-1D58-4D8E-B584-F36E06FD49E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendOrganizer.DataAccess", "FriendOrganizer.DataAccess\FriendOrganizer.DataAccess.csproj", "{95D7D132-4C7C-4256-91BF-EE66CD0FC3A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendOrganizer.Model", "FriendOrganizer.Model\FriendOrganizer.Model.csproj", "{D0B5FCD3-62C2-48BB-A9FD-156E8038BB51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE536887-1D58-4D8E-B584-F36E06FD49E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE536887-1D58-4D8E-B584-F36E06FD49E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE536887-1D58-4D8E-B584-F36E06FD49E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE536887-1D58-4D8E-B584-F36E06FD49E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95D7D132-4C7C-4256-91BF-EE66CD0FC3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D7D132-4C7C-4256-91BF-EE66CD0FC3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D7D132-4C7C-4256-91BF-EE66CD0FC3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D7D132-4C7C-4256-91BF-EE66CD0FC3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B5FCD3-62C2-48BB-A9FD-156E8038BB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B5FCD3-62C2-48BB-A9FD-156E8038BB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B5FCD3-62C2-48BB-A9FD-156E8038BB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B5FCD3-62C2-48BB-A9FD-156E8038BB51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

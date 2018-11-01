@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95D7D132-4C7C-4256-91BF-EE66CD0FC3A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FriendOrganizer.DataAccess</RootNamespace>
+    <AssemblyName>FriendOrganizer.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FriendOrganizationDbContext.cs" />
+    <Compile Include="Migrations\201808060643017_InitialDatabase.cs" />
+    <Compile Include="Migrations\201808060643017_InitialDatabase.Designer.cs">
+      <DependentUpon>201808060643017_InitialDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808091330330_AddedProgrammingLanguage.cs" />
+    <Compile Include="Migrations\201808091330330_AddedProgrammingLanguage.Designer.cs">
+      <DependentUpon>201808091330330_AddedProgrammingLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808101203271_AddedFriendPhoneNumbers.cs" />
+    <Compile Include="Migrations\201808101203271_AddedFriendPhoneNumbers.Designer.cs">
+      <DependentUpon>201808101203271_AddedFriendPhoneNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808131102189_AddedMeeting.cs" />
+    <Compile Include="Migrations\201808131102189_AddedMeeting.Designer.cs">
+      <DependentUpon>201808131102189_AddedMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808191604271_AddedRowVersionToFriend.cs" />
+    <Compile Include="Migrations\201808191604271_AddedRowVersionToFriend.Designer.cs">
+      <DependentUpon>201808191604271_AddedRowVersionToFriend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FriendOrganizer.Model\FriendOrganizer.Model.csproj">
+      <Project>{d0b5fcd3-62c2-48bb-a9fd-156e8038bb51}</Project>
+      <Name>FriendOrganizer.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808060643017_InitialDatabase.resx">
+      <DependentUpon>201808060643017_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808091330330_AddedProgrammingLanguage.resx">
+      <DependentUpon>201808091330330_AddedProgrammingLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808101203271_AddedFriendPhoneNumbers.resx">
+      <DependentUpon>201808101203271_AddedFriendPhoneNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808131102189_AddedMeeting.resx">
+      <DependentUpon>201808131102189_AddedMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808191604271_AddedRowVersionToFriend.resx">
+      <DependentUpon>201808191604271_AddedRowVersionToFriend.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
